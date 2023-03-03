@@ -3,7 +3,7 @@ const songId = 1
 let stem = []
 let mute = document.querySelectorAll('.mute')
 for (let index = 0; index < mute.length; index++) {
-    stem.push(new Audio(`public/uploads/songs/${songId}/Stem${index}.WAV`))
+    stem.push(new Audio(`/public/uploads/songs/${songId}/Stem${index}.WAV`))
 }
 stem[0].addEventListener('loadedmetadata', () =>{
     totalMin.innerHTML = Math.floor(stem[0].duration / 60)
