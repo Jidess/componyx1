@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: hsl(var(--s)) hsl(var(--pc));
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #3b3b3b;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--s));
+    border-radius: 10px;
+    border:none #ffffff;
+  }
+
+.bg-dark{
+  background-color: #121212 !important;
+}
+
+.logo1{
+    font-family: 'Blade Runner Movie Font', sans-serif;
+    color: #BB86FC;
+}
+.logo2{
+    font-family: 'Blade Runner Movie Font', sans-serif;
+    color: #03DAC5;
+}
+
+.mainMusicList{
+  margin-bottom: 2rem;
+}
+
+.historicMusicList{
+  max-height: 29vh;
+}
+
+.likeMusicList{
+  max-height: 29vh;
+  height: 29vh;
+}
